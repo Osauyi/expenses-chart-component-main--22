@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="balance">
+          <h1>My balance</h1>
+          <h2>$921.48</h2>
+        </div>
+        <div class="imagebox">
+          <img class="logo" src="images/logo.svg" alt="logo" />
+        </div>
+      </header>
+      <section>
+        <h3>Spending - Last 7 days</h3>
+        <div class="chartBox">
+          <div class="mon days">
+            <div class="data">$<sapn class="dataText monData"></sapn></div>
+            <div class="monBox boxbody"></div>
+            <p>mon</p>
+          </div>
+          <div class="tue days">
+            <div class="data">$<sapn class="dataText tueData"></sapn></div>
+            <div class="tueBox boxbody"></div>
+            <p>tue</p>
+          </div>
+          <div class="wed days">
+            <div class="data">$<sapn class="dataText WedData"></sapn></div>
+            <div class="wedBox boxbody"></div>
+            <p>wed</p>
+          </div>
+          <div class="thur days">
+            <div class="data">$<sapn class="dataText thuData"></sapn></div>
+            <div class="thurBox boxbody"></div>
+            <p>thu</p>
+          </div>
+          <div class="fri days">
+            <div class="data">$<sapn class="dataText friData"></sapn></div>
+            <div class="friBox boxbody"></div>
+            <p>fri</p>
+          </div>
+          <div class="sat days">
+            <div class="data">$<sapn class="dataText satData"></sapn></div>
+            <div class="satBox boxbody"></div>
+            <p>sat</p>
+          </div>
+          <div class="sun days">
+            <div class="data">$<sapn class="dataText sunData"></sapn></div>
+            <div class="sunBox boxbody"></div>
+            <p>sun</p>
+          </div>
+        </div>
+        <hr class="line" />
+        <div class="total">
+          <div class="formonth">
+            <h2>Total this month</h2>
+            <h3>$478.33</h3>
+          </div>
+          <div class="percmonth">
+            <h4>+2.4%</h4>
+            <p>from that month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Osauyi</a>.
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

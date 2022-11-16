@@ -1,0 +1,194 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+--Soft-red: hsl(10, 79%, 65%);
+--Cyan: hsl(186, 34%, 60%);
+--Dark-brown: hsl(25, 47%, 15%);
+--Medium-brown: hsl(28, 10%, 53%);
+--Cream: hsl(27, 66%, 92%);
+--Very-pale-orange: hsl(33, 100%, 98%);
+
+}
+
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 100px 20px;
+  background-color: var(--Cream);
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+h1{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--Very-pale-orange);
+  margin-bottom: 0;
+}
+
+h2{
+  margin-top: 10px;
+  font-weight: 700;
+  color: var(--Very-pale-orange);
+
+}
+
+h3{
+  color: var(--Dark-brown);
+  font-weight: 700;
+  font-size: 1.55rem;
+  margin-top: 0;
+}
+
+h4{
+  color: var(--Dark-brown);
+  margin-bottom: 0;
+}
+
+p{
+  font-size: .85rem;
+  color: var(--Medium-brown);
+}
+
+
+header{
+   display: flex;
+  background-color: var(--Soft-red);
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 30px 1px 20px;
+}
+
+.logo{
+  width: 60px;
+}
+
+.imagebox{
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+
+section{
+  background-color: var(--Very-pale-orange);
+  border-radius: 10px;
+  padding: 30px 20px 40px;
+  margin-top: 20px;
+}
+
+.chartBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.boxbody{
+  width: 75%;
+  border-radius: 3px;
+  height: 50px;
+  background-color: var(--Soft-red);
+  margin: 0 auto;
+}
+
+.mon, .tue, .wed, .thur, .fri, .sat, .sun{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.monBox{
+  height: 60px;
+}
+
+.tueBox{
+  height: 100px;
+}
+
+.wedBox{
+  height: 150px;
+  background-color: var(--Cyan);
+}
+
+.thurBox{
+  height: 90px;
+}
+
+.friBox{
+  height: 70px;
+}
+
+.satBox{
+  height: 125px;
+}
+
+.sunBox{
+  height: 75px;
+}
+
+.data{
+  display: none;
+  background-color: var(--Dark-brown);
+  color: var(--Cream);
+  margin-bottom: 8px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: .6rem;
+}
+
+
+.line{
+  display: flex;
+  border: 1px solid var(--Cream);
+
+}
+
+.total{
+  display: flex;
+  margin-top: 25px;
+}
+
+.formonth h2{
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--Medium-brown);
+}
+
+.formonth h3{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Dark-brown);
+  margin-bottom: 0;
+}
+
+.percmonth{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 65%;
+  text-align: right;
+}
+
+.percmonth p{
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 62.5rem) {
+  body{
+    width: 27%;
+    margin: 80px auto;
+  }
+
+.data{
+  font-size: .8rem
+}
+}
